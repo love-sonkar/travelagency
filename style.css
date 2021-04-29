@@ -264,12 +264,10 @@
 
     .navbar ul{
         flex-direction: column;
+        display: none;
     }
     .burger{
         display: block;
-    }
-    .nav-list{
-        display: none;
     }
     
     #home a{
