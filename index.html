@@ -18,13 +18,13 @@
         <div class="logo right-nav v-class-resp">
             <h1>programming hack</h1>
         </div>
-        <ul class="nav-list v-class-resp">
+        <ul id="resp" class="nav-list v-class-resp">
             <li id="home"><a href="#">home</a></li>
             <li><a href="#dream">dream city</a></li>
             <li><a href="#visit">visit place</a></li>
             <li><a href="#cont">contact</a></li>
         </ul>
-        <div class="burger">
+        <div class="burger" onclick="funct()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -98,7 +98,16 @@
     <footer class="footer">
         <p>copyright@2021-2022</p>
     </footer>
-   <script src="resp.js"></script>
+   <script>
+       function funct(){
+           var hide = document.getElementById('resp');
+            if(hide.style.display === "block"){
+                hide.style.display = "none";
+            }else{
+                hide.style.display = "block";
+            }
+       }
+   </script>
 </body>
 
 </html>
