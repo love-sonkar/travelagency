@@ -1,387 +1,385 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    font-family: 'Josefin Sans',sans-serif;
-    scroll-behavior: smooth;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* styling in navigation bar */
 
-.bg{
-    position: absolute;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-     url(image/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
+.bg {
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
 }
 
-.navbar{
-    display: flex;
-    position: relative;
+.navbar {
+  display: flex;
+  position: relative;
 }
 
 .logo {
-    margin: 22px 31px 24px 16px;
+  margin: 22px 31px 24px 16px;
 }
-.logo h1{
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.navbar ul{
-    display: flex;
+.logo h1 {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.navbar ul li{
-    list-style: none;
+.navbar ul {
+  display: flex;
 }
 
-.navbar ul li a{
-    display: block;
-    text-decoration: none;
-    font-size: .9rem;
-    margin: 33px 9px 0px 9px;
-    padding-bottom: 6px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+.navbar ul li {
+  list-style: none;
 }
 
-.navbar ul li a:hover{
-    border-bottom: 2px solid rgb(255, 0, 0);
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 33px 9px 0px 9px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
- #home a{
-    border-bottom: 2px solid rgb(255, 0, 0);
- }
-
-.sec{
-    height: 90vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.navbar ul li a:hover {
+  border-bottom: 2px solid rgb(255, 0, 0);
 }
 
-.content h4{
-    color: rgb(255, 255, 255);
-    font-size: 2.5rem;
-    font-weight: bold;
+#home a {
+  border-bottom: 2px solid rgb(255, 0, 0);
 }
 
-.content h1{
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 7px 0px 17px 0px;
+.sec {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.btn1{
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: .9rem;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid rgb(255, 0, 0);
-    padding-bottom: 7px;
+.content h4 {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.content h1 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 7px 0px 17px 0px;
+}
+
+.btn1 {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(255, 0, 0);
+  padding-bottom: 7px;
 }
 
 /* styling in section  */
-.section{
-    padding: 20px;
-    background-color: rgb(255,255,255);
+.section {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
 }
-.section h1{
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-.dream{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
+.section h1 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 260px;
-    width: 100%;
-    margin: 24px;
+.dream {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
 }
 
-.box img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 260px;
+  width: 100%;
+  margin: 24px;
 }
 
-.box h1{
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 10px 0px 11px 0px;
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.box p{
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
+.box h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0px 11px 0px;
+}
+
+.box p {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
 }
 
 /* styling in visit place */
 
-.visitplace{
-    margin-top:25px
+.visitplace {
+  margin-top: 25px;
 }
 
-.visitplace::before{
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(image/leaves.jpg);
-    background-attachment: fixed;
-    height: 63%;
-    width: 100%;
-    z-index: -1;
+.visitplace::before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(image/leaves.jpg);
+  background-attachment: fixed;
+  height: 63%;
+  width: 100%;
+  z-index: -1;
 }
 
-.visitplace h1{
-    padding: 24px 0px 22px 0px;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    text-align: center;
+.visitplace h1 {
+  padding: 24px 0px 22px 0px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-.cont{
-    padding: 18px 36px;
-    margin-top:20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 300px;
+.cont {
+  padding: 18px 36px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
 }
 
-.box-two img{
-    display: block;
-    max-width: 260px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+.box-two img {
+  display: block;
+  max-width: 260px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-#parrot{
-    max-width: 223px;
+#parrot {
+  max-width: 223px;
 }
 
-.box-two h1{
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+.box-two h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
-.box-two p{
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
+.box-two p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
 }
 
 /* styling in contact us section */
-.contact{
-    background-color: rgb(228 228 228);
+.contact {
+  background-color: rgb(228 228 228);
+  padding: 0.625rem 0;
 }
-.contact h1{
-    padding: 24px 0px 22px 0px;
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-.secti{
-    display: flex;
+.contact h1 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 0.625rem;
 }
 
-.secti h1{
-    margin: 10px 17px 10px 10px;
-    display: block;
-    margin: auto;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.9375rem;
+}
+
+.contact-details h1 {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
 }
 
 /* styling in footer section */
 
-.footer{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
+.footer {
+  padding: 0.625rem 0;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 4%;
+  top: 26px;
+}
+
+.line {
+  width: 23px;
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  margin: 4px 3px;
+  border-radius: 50px;
+}
+
+/*meadia queries for responsive coding */
+
+@media (max-width: 768px) {
+  /* styling in navigation */
+
+  .navbar {
+    flex-direction: column;
     text-align: center;
-}
+  }
 
-.footer p{
-    font-size: .8rem;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-
-.burger{
-    cursor: pointer;
+  .navbar ul {
+    flex-direction: column;
     display: none;
-    position: absolute;
-    right: 4%;
-    top: 26px;
+  }
+  .burger {
+    display: block;
+  }
+
+  #home a {
+    border-bottom: none;
+  }
+
+  .navbar ul li a:hover {
+    border-bottom: none;
+  }
+  .h-nav-resp {
+    height: 75px;
+  }
+
+  /* styling in home content */
+
+  .content h4 {
+    font-size: 2rem;
+  }
+
+  .content h1 {
+    font-size: 1.1rem;
+  }
+
+  /* styling in dream city */
+
+  .dream {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .box {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .box h1 {
+    margin: 18px 0px 10px 0px;
+    font-size: 2rem;
+  }
+
+  .box p {
+    margin: 15px;
+    font-size: 1rem;
+  }
+
+  .box img {
+    max-width: 100%;
+  }
+
+  /* stylin in visit place  */
+
+  .visitplace::before {
+    height: 840px;
+  }
+  .cont {
+    padding: 0px;
+    margin: 0px;
+    height: 768px;
+    flex-direction: column;
+  }
+
+  .visitplace h1 {
+    font-size: 1.5rem;
+  }
+
+  .box-two p {
+    display: block;
+    margin: 0px auto 10px auto;
+    max-width: 50%;
+  }
+  .box-two img {
+    max-width: 180px;
+  }
+
+  #parrot {
+    max-width: 180px;
+  }
+
+  /* style in contact section */
+
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-details h1 {
+    font-size: 1.1rem;
+  }
 }
 
-.line{
-    width: 23px;
-    background-color: rgb(255, 255, 255);
-    height: 3px;
-    margin: 4px 3px;
-    border-radius: 50px;
-}
+@media (max-width: 468px) {
+  .content h4 {
+    font-size: 1.5rem;
+  }
 
-/*meadia queries for responsive coding */     
+  .content h1 {
+    font-size: 0.8rem;
+  }
 
-@media (max-width: 768px){
+  .visitplace::before {
+    height: 880px;
+  }
+  .cont {
+    height: 804px;
+  }
+  .box-two h1 {
+    font-size: 1.5rem;
+  }
+  .box-two p {
+    font-size: 1rem;
+  }
 
-    /* styling in navigation */
-
-    .navbar{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar ul{
-        flex-direction: column;
-        display: none;
-    }
-    .burger{
-        display: block;
-    }
-    
-    #home a{
-        border-bottom: none;
-    }
-
-    .navbar ul li a:hover{
-        border-bottom:none;
-    }
-    .h-nav-resp{
-        height: 75px;
-    }
-    
-    
-    /* styling in home content */
-
-    .content h4{
-        font-size: 2rem;
-    }
-
-    .content h1{
-        font-size: 1.1rem;
-    }
-
-    /* styling in dream city */
-
-    .dream{
-        height: 100%;
-        flex-direction: column;
-    }
-
-    .box{
-        height: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .box h1{
-        margin: 18px 0px 10px 0px;
-        font-size: 2rem;
-    }
-
-    .box p{
-        margin: 15px;
-        font-size: 1rem;
-    }
-
-    .box img{
-        max-width: 100%;
-    }
-
-    /* stylin in visit place  */
-
-    .visitplace::before{
-        height: 840px;
-    }    
-    .cont{
-        padding: 0px;
-        margin: 0px;
-        height: 768px;
-        flex-direction: column;
-    }
-
-    .visitplace h1{
-        font-size: 1.5rem;
-    }
-
-    .box-two p{
-        display: block;
-        margin: 0px auto 10px auto;
-        max-width: 50%;
-    }
-    .box-two img{
-        max-width: 180px;
-    }
-
-    #parrot{
-        max-width: 180px;
-    }
-
-    /* style in contact section */
-
-    .secti{
-        flex-direction: column;
-    }
-    .contact h1{
-        font-size: 1.5rem;
-    }
-
-    .secti h1{
-        font-size: .9rem
-    }
-}
-
-
-@media (max-width: 468px){
-    .content h4{
-        font-size: 1.5rem;
-    }
-
-    .content h1{
-        font-size: .8rem;
-    }
-
-    .visitplace::before{
-        height: 880px;
-    }    
-    .cont{
-        height: 804px;
-    }
-    .box-two h1{
-        font-size: 1.5rem;
-    }
-    .box-two p{
-        font-size: 1rem;
-    }
+  .contact-details h1 {
+    font-size: 0.9rem;
+  }
 }
