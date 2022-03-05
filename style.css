@@ -95,47 +95,40 @@
 }
 
 /* styling in section  */
-.section {
+.dream-city {
   padding: 20px;
   background-color: rgb(255, 255, 255);
 }
-.section h1 {
+.dream-city h1 {
   font-size: 2rem;
   color: rgb(0, 0, 0);
   text-align: center;
+  margin: 1.25rem;
 }
 
-.dream {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
+.dream-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15.68rem, 1fr));
+  padding: 1.25rem 0;
 }
 
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 260px;
+.dream-box {
+  display: grid;
+  place-content: center;
+}
+
+.dream-box img {
   width: 100%;
-  margin: 24px;
-}
-
-.box img {
-  width: 100%;
-  height: auto;
   border-radius: 10px;
 }
 
-.box h1 {
+.dream-box h1 {
   color: rgb(0, 0, 0);
   font-size: 2rem;
-  font-weight: bold;
-  margin: 10px 0px 11px 0px;
 }
 
-.box p {
+.dream-box p {
   color: rgb(0, 0, 0);
   font-size: 1rem;
 }
@@ -143,7 +136,8 @@
 /* styling in visit place */
 
 .visitplace {
-  margin-top: 25px;
+  height: max-content;
+  position: relative;
 }
 
 .visitplace::before {
@@ -152,47 +146,44 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(image/leaves.jpg);
   background-attachment: fixed;
-  height: 63%;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
 
 .visitplace h1 {
-  padding: 24px 0px 22px 0px;
-  font-size: 2rem;
+  padding: 1.25rem 0 0.625rem 0;
+  font-size: 1.8rem;
   color: rgb(255, 255, 255);
   text-align: center;
 }
 
-.cont {
-  padding: 18px 36px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.visit-content {
+  padding: 1.25rem 0.625rem;
+  display: grid;
+  gap: 1rem;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   text-align: center;
-  height: 300px;
 }
 
-.box-two img {
-  display: block;
-  max-width: 260px;
-  margin: auto;
+.visit-box {
+  padding: 1.25rem 0;
+}
+
+.visit-box img {
+  aspect-ratio: 1.5/1;
+  width: 100%;
   border-radius: 10px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-#parrot {
-  max-width: 223px;
-}
-
-.box-two h1 {
+.visit-box h1 {
+  padding: 0.625rem 0;
   font-size: 2rem;
-  font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
-.box-two p {
+.visit-box p {
   font-size: 1rem;
   color: rgb(255, 255, 255);
 }
@@ -290,60 +281,11 @@
     font-size: 1.1rem;
   }
 
-  /* styling in dream city */
-
-  .dream {
-    height: 100%;
-    flex-direction: column;
-  }
-
-  .box {
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .box h1 {
-    margin: 18px 0px 10px 0px;
-    font-size: 2rem;
-  }
-
-  .box p {
-    margin: 15px;
-    font-size: 1rem;
-  }
-
-  .box img {
-    max-width: 100%;
-  }
-
   /* stylin in visit place  */
-
-  .visitplace::before {
-    height: 840px;
-  }
-  .cont {
-    padding: 0px;
-    margin: 0px;
-    height: 768px;
-    flex-direction: column;
-  }
 
   .visitplace h1 {
     font-size: 1.5rem;
-  }
-
-  .box-two p {
-    display: block;
-    margin: 0px auto 10px auto;
-    max-width: 50%;
-  }
-  .box-two img {
-    max-width: 180px;
-  }
-
-  #parrot {
-    max-width: 180px;
+    padding: 0.625rem 0;
   }
 
   /* style in contact section */
@@ -354,6 +296,17 @@
 
   .contact-details h1 {
     font-size: 1.1rem;
+  }
+
+  /* new styling  */
+  /* styling in dream city */
+
+  .dream-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .dream-box p {
+    font-size: 0.9rem;
   }
 }
 
@@ -366,20 +319,31 @@
     font-size: 0.8rem;
   }
 
-  .visitplace::before {
-    height: 880px;
+  .visit-box h1 {
+    font-size: 1.2rem;
   }
-  .cont {
-    height: 804px;
+  .visit-box p {
+    font-size: 0.8rem;
   }
-  .box-two h1 {
-    font-size: 1.5rem;
-  }
-  .box-two p {
-    font-size: 1rem;
-  }
-
   .contact-details h1 {
     font-size: 0.9rem;
+  }
+
+  /* new line of styling  */
+
+  .dream-city {
+    padding: 0;
+  }
+
+  .dream-city h1 {
+    margin: 0.625rem 0;
+  }
+
+  .dream-city p {
+    padding: 0 0.625rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
   }
 }
