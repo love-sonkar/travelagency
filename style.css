@@ -86,20 +86,20 @@
   position: relative;
   display: grid;
   place-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .content h4 {
+  width: 80%;
   color: rgb(255, 255, 255);
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.625rem 0;
 }
 
 .content h1 {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0.625rem 0;
 }
 
 .btn1 {
@@ -162,7 +162,7 @@
 .visitplace::before {
   content: '';
   position: absolute;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(image/leaves.jpg);
   background-attachment: fixed;
   height: 100%;
@@ -287,8 +287,14 @@
 
   /* styling in home content */
 
+  .home-section {
+    padding: 0 0.625rem;
+    text-align: center;
+  }
+
   .content h4 {
-    font-size: 2rem;
+    width: 100%;
+    font-size: 0.9rem;
   }
 
   .content h1 {
@@ -323,10 +329,6 @@
 
 @media (max-width: 468px) {
   .content h4 {
-    font-size: 1.5rem;
-  }
-
-  .content h1 {
     font-size: 0.8rem;
   }
 
